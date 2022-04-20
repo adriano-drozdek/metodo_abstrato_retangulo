@@ -25,8 +25,7 @@ public class Circulo extends Formato {
 
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-		return 0;
+		return Math.PI * raio * raio;
 	}
 
 }
