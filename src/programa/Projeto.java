@@ -19,11 +19,11 @@ public class Projeto {
 
 		List<Formato> list = new ArrayList<>();
 		
-		System.out.println("Informe a quantidade de figuras: ");
+		System.out.print("Informe a quantidade de figuras: ");
 		int n = sc.nextInt();
 
 		for (int i = 1; i <= n; i++) {
-			System.out.print("Figura número #" + i);
+			System.out.println("Figura número #" + i);
 			System.out.print("Retângulo ou circulo (r/c) ");
 			char ch = sc.next().charAt(0);
 			System.out.print("Cor (PRETO/AZUL/VERMELHO) ");
@@ -42,6 +42,12 @@ public class Projeto {
 				list.add(new Circulo(cor, raio));
 			}
 			
+		}
+		
+		System.out.println();
+		System.out.println("Área das figuras:");
+		for(Formato formato : list) {
+			System.out.println(String.format("%.2f", formato.area()));
 		}
 
 		sc.close();
