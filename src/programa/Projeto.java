@@ -19,6 +19,8 @@ public class Projeto {
 			System.out.print("Figura número #" + i);
 			System.out.print("Retângulo ou circulo (r/c) ");
 			char ch = sc.next().charAt(0);
+			System.out.print("Cor (PRETO/AZUL/VERMELHO) ");
+			Cores cor = Cores.valueOf(sc.next());
 
 		}
 
